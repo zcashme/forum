@@ -34,6 +34,12 @@ jobs:
         env:
           # Explicit base path for project pages under zcashme/forum
           VITE_BASE_PATH: /forum/
+          # Supabase public env for frontend (set these Secrets in repo settings)
+          VITE_SUPABASE_URL: ${{ secrets.VITE_SUPABASE_URL }}
+          VITE_SUPABASE_ANON_KEY: ${{ secrets.VITE_SUPABASE_ANON_KEY }}
+          # Optional: schema/table (defaults: zda/zecbook)
+          VITE_SUPABASE_SCHEMA: zda
+          VITE_MEMO_TABLE: zecbook
         run: npm run build
 
       - name: Upload Pages artifact
