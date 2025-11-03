@@ -32,7 +32,8 @@ export default function AnonymousBoard() {
     setLoading(true);
     setError("");
     try {
-      const schema = import.meta.env.VITE_SUPABASE_SCHEMA || "zda";
+      let schema = import.meta.env.VITE_SUPABASE_SCHEMA || "public";
+      if (schema !== "public" && schema !== "graphql_public") schema = "public";
       const table = import.meta.env.VITE_MEMO_TABLE || "zecbook";
       const fromArg = supabase.schema ? table : `${schema}.${table}`;
       const client = supabase.schema ? supabase.schema(schema) : supabase;
@@ -61,7 +62,8 @@ export default function AnonymousBoard() {
   useEffect(() => {
     // Realtime updates from Supabase (requires VITE_SUPABASE_URL + VITE_SUPABASE_ANON_KEY)
     if (typeof supabase.channel === "function") {
-      const schema = import.meta.env.VITE_SUPABASE_SCHEMA || "zda";
+      let schema = import.meta.env.VITE_SUPABASE_SCHEMA || "public";
+      if (schema !== "public" && schema !== "graphql_public") schema = "public";
       const table = import.meta.env.VITE_MEMO_TABLE || "zecbook";
       const ch = supabase
         .channel("anonboard-changes")

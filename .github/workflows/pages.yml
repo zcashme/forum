@@ -37,8 +37,8 @@ jobs:
           # Supabase public env for frontend (set these Secrets in repo settings)
           VITE_SUPABASE_URL: ${{ secrets.VITE_SUPABASE_URL }}
           VITE_SUPABASE_ANON_KEY: ${{ secrets.VITE_SUPABASE_ANON_KEY }}
-          # Optional: schema/table (defaults: zda/zecbook)
-          VITE_SUPABASE_SCHEMA: zda
+          # Optional: schema/table (defaults: public/zecbook)
+          VITE_SUPABASE_SCHEMA: public
           VITE_MEMO_TABLE: zecbook
         run: npm run build
 
