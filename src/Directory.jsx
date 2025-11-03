@@ -1,5 +1,5 @@
 import { useMemo, useRef, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 
 import AddUserForm from "./AddUserForm";
 import ZcashFeedback from "./ZcashFeedback";
@@ -333,12 +333,12 @@ export default function Directory() {
           className="fixed top-0 left-0 right-0 bg-transparent/20 backdrop-blur-md z-[40] flex items-center justify-between px-4 py-2 shadow-sm"
         >
           <div className="flex items-center gap-2 flex-1">
-  <a
-    href="/"
+  <Link
+    to="/"
     className="font-bold text-lg text-blue-700 hover:text-blue-800 whitespace-nowrap"
   >
     Zcash.me/
-  </a>
+  </Link>
   <div className="relative flex-1 max-w-sm">
     <input
       value={search}
