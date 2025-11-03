@@ -1,0 +1,352 @@
+{
+  "H9KJYDND5MT4SEV1KJT3C17Q38": {
+    "session_id": "H9KJYDND5MT4SEV1KJT3C17Q38",
+    "addr": "u1demoaliceaddress...",
+    "otp_hash": "bf8978c52961aba6396a569df8343bb963a65e79911030841ae536b58be8e109",
+    "mac": "6f6b8a897aeea51f85b12b7d5b1d131b082e79ccb5d79950f2cd04d928eff3a0",
+    "expiry": "2025-10-24T02:37:25.952062+00:00",
+    "status": "used",
+    "origin_txid": "stub-txid-C3CDGERANWDF2",
+    "attempts": 1
+  },
+  "M4C9528Q0E6V58MAEZ4H8GCBXC": {
+    "session_id": "M4C9528Q0E6V58MAEZ4H8GCBXC",
+    "addr": "u1gz4lfz3ecx4l56yj77q65v9t3tdtmfz0xuutmza8uq0l43l6f5xd347dfthag7ngcp0usekxx2fltpdhvceagr8ap03dqzyhy0yqm9pwdwypq5fzrzetvsdmn7wgkpukh0h3cw4xhdr87t8v59xe4jp7n6q9948pszmj5fq0dhtlx92kt8cvpvpwuhvyayeage7w5gpp7lezj6g6dmx",
+    "otp_hash": "952bb69eb57df94a02517c257ae5e9fd25eaebd798984a82ae8dea26ce1acc81",
+    "mac": "fa130f8623f4dc79334e2b28a7a80fbd438e8593972b97cdd59d53aac58dce22",
+    "expiry": "2025-10-26T13:53:17.878533+00:00",
+    "status": "pending",
+    "origin_txid": "stub-txid-XFKTFHRY1ANSY",
+    "attempts": 0
+  },
+  "3HX2KC45F8VGJY0ANYYQ1JPJ8W": {
+    "session_id": "3HX2KC45F8VGJY0ANYYQ1JPJ8W",
+    "addr": "u1gz4lfz3ecx4l56yj77q65v9t3tdtmfz0xuutmza8uq0l43l6f5xd347dfthag7ngcp0usekxx2fltpdhvceagr8ap03dqzyhy0yqm9pwdwypq5fzrzetvsdmn7wgkpukh0h3cw4xhdr87t8v59xe4jp7n6q9948pszmj5fq0dhtlx92kt8cvpvpwuhvyayeage7w5gpp7lezj6g6dmx",
+    "otp_hash": "af12e0d7f4d0817db0b94507e2999f0c9ea0dbeca026d66a4ff6e74fe295bbaa",
+    "mac": "4094cd73c3d95d9aa85b9bac9327a783714f8eac09f85b4bbe25f000a20ce823",
+    "expiry": "2025-10-26T13:53:31.627503+00:00",
+    "status": "pending",
+    "origin_txid": "stub-txid-TRD47MHHEPA6M",
+    "attempts": 3
+  },
+  "0XM17ESXPX2PTYPZKXKSA9TE8C": {
+    "session_id": "0XM17ESXPX2PTYPZKXKSA9TE8C",
+    "addr": "u1gz4lfz3ecx4l56yj77q65v9t3tdtmfz0xuutmza8uq0l43l6f5xd347dfthag7ngcp0usekxx2fltpdhvceagr8ap03dqzyhy0yqm9pwdwypq5fzrzetvsdmn7wgkpukh0h3cw4xhdr87t8v59xe4jp7n6q9948pszmj5fq0dhtlx92kt8cvpvpwuhvyayeage7w5gpp7lezj6g6dmx",
+    "otp_hash": "424e02f5898778a706bdf98dcd20aab612a29a35b57ee5c92103eb9a179751ea",
+    "mac": "41b8346ad79c8fa7e6dee08a4d93613a81cffd2152219d3c5c3ca9781485a0be",
+    "expiry": "2025-10-26T14:59:16.633093+00:00",
+    "status": "pending",
+    "origin_txid": "stub-txid-4AJ8WQQ3TCCQ2",
+    "attempts": 0
+  },
+  "FWHBDA2NZ35RSQ4VZ5KD3SCZC8": {
+    "session_id": "FWHBDA2NZ35RSQ4VZ5KD3SCZC8",
+    "addr": "u1demoaliceaddress...",
+    "otp_hash": "714deaa827ffbe69df123d94ee04ea4ae501ceacc6a23699a5428921c28f6759",
+    "mac": "1c6f7ca718a96009d3379cd704db7b23458a3d2d14bfeeffef362ab9adba1010",
+    "expiry": "2025-10-26T15:01:43.331302+00:00",
+    "status": "pending",
+    "origin_txid": "stub-txid-EEN2XK5288WWA",
+    "attempts": 1
+  },
+  "Z7S9GZ3W2ES9AQ8E3E79D6V6YC": {
+    "session_id": "Z7S9GZ3W2ES9AQ8E3E79D6V6YC",
+    "addr": "u1gz4lfz3ecx4l56yj77q65v9t3tdtmfz0xuutmza8uq0l43l6f5xd347dfthag7ngcp0usekxx2fltpdhvceagr8ap03dqzyhy0yqm9pwdwypq5fzrzetvsdmn7wgkpukh0h3cw4xhdr87t8v59xe4jp7n6q9948pszmj5fq0dhtlx92kt8cvpvpwuhvyayeage7w5gpp7lezj6g6dmx",
+    "otp_hash": "f9b8740e6ced5407c3382686f038d2eabecf8d794d663fa7ec048612f017e25b",
+    "mac": "32b988cbcb138a407d84c94ee27e4eed32f4902be60389d1684649bc7b709abe",
+    "expiry": "2025-10-26T15:55:52.783620+00:00",
+    "status": "pending",
+    "origin_txid": "stub-txid-69Z1FGSPMNK5W",
+    "attempts": 0
+  },
+  "1PWAV7BK9RVEEK87AYCPQB0KAR": {
+    "session_id": "1PWAV7BK9RVEEK87AYCPQB0KAR",
+    "addr": "u1kcnr4zsrvzrvaaqsyvtn6n8w8vh5ac5j60ak0986d3e8wk6cgmjmn6a5fjx0ydc9xkc0py8ym3wc7l7ukq6dzxcu5nmakynzaeumd47dmrukf0s9pf8vg8hcpapgeaa46x5lmsk4yfnxygrwlhqzn7zduwtyrdn75qdz2kjqyt45774yshpewemrkz73j8nqp3u2urrmx38tg3a3hdn",
+    "otp_hash": "5e50f12c3960d056f89f53f6adfdce65e87addd1b42016d7a96ebefc7546f2f8",
+    "mac": "25374ef642ce6bfa129850d02b86eaa45df55046655bcf9d660b7234fef54dfb",
+    "expiry": "2025-10-26T15:56:37.321041+00:00",
+    "status": "pending",
+    "origin_txid": "stub-txid-MXM1EQ9FMV32E",
+    "attempts": 0
+  },
+  "ZKGYAWRE5B54FHEG4TR9BFF934": {
+    "session_id": "ZKGYAWRE5B54FHEG4TR9BFF934",
+    "addr": "u1kcnr4zsrvzrvaaqsyvtn6n8w8vh5ac5j60ak0986d3e8wk6cgmjmn6a5fjx0ydc9xkc0py8ym3wc7l7ukq6dzxcu5nmakynzaeumd47dmrukf0s9pf8vg8hcpapgeaa46x5lmsk4yfnxygrwlhqzn7zduwtyrdn75qdz2kjqyt45774yshpewemrkz73j8nqp3u2urrmx38tg3a3hdn",
+    "otp_hash": "17dca0d97c6a44596a685833ba8f01a1eec5ef4e6577aa274d3919e306bdea50",
+    "mac": "5cbad70982a13718af0c7d163df130a1973d1b3237939d0c5d2958cd051b19a3",
+    "expiry": "2025-10-26T15:57:13.617371+00:00",
+    "status": "pending",
+    "origin_txid": "stub-txid-CT942DQAN3WQG",
+    "attempts": 4
+  },
+  "9PECM0C925F8A7316JMRQE264G": {
+    "session_id": "9PECM0C925F8A7316JMRQE264G",
+    "addr": "(unknown)",
+    "otp_hash": "1cb8a84a1bfe256ae94c8f29e1795e14b0b023bdea85678e346a27b78050e9e7",
+    "mac": "bf418c433fd15bd0a36f77a68006c0e0372f505a474c361913373b035fbed2ba",
+    "expiry": "2025-10-27T09:07:40.901592+00:00",
+    "status": "pending",
+    "origin_txid": "stub-txid-TV5QNBBNBZ3YR",
+    "attempts": 0
+  },
+  "DDBQE49Z6NSZ6QKGBMJ4HCG6EM": {
+    "session_id": "DDBQE49Z6NSZ6QKGBMJ4HCG6EM",
+    "addr": "(unknown)",
+    "otp_hash": "5efa33456d73dcfd02e76f8bb1f8219412126a6b112fd8aabe5915fa3ca9fc6e",
+    "mac": "8319b2d5dfc70a32ee912ac9cc0f3b4264c76e980b7f0599aea316c11ca86ba4",
+    "expiry": "2025-10-27T09:07:44.297275+00:00",
+    "status": "pending",
+    "origin_txid": "stub-txid-0TVK1G0DCH430",
+    "attempts": 0
+  },
+  "B1P76X834Y929PB7BS45QYABR0": {
+    "session_id": "B1P76X834Y929PB7BS45QYABR0",
+    "addr": "(unknown)",
+    "otp_hash": "80c5901b2527de686fc2cf356568587115b07fbc48f41d2f4a01338c01840abd",
+    "mac": "95673de2944b8e42fd39a3da8eff8131d48d29883cd8e11881898f2e79288380",
+    "expiry": "2025-10-27T09:07:45.056647+00:00",
+    "status": "pending",
+    "origin_txid": "stub-txid-V6HZ1BGKFAV46",
+    "attempts": 0
+  },
+  "X43ESM0YYM8J6D1FG5T8SXDGWM": {
+    "session_id": "X43ESM0YYM8J6D1FG5T8SXDGWM",
+    "addr": "(unknown)",
+    "otp_hash": "5a6409aa7cc00cf76e7c4120793c977a0aec54ba7735efa95ce5346bfc6b657f",
+    "mac": "981f6c1697c2f5e89585711c4f12839a9929042a7330d46dd59902dc47f2fbb1",
+    "expiry": "2025-10-27T09:07:45.836548+00:00",
+    "status": "pending",
+    "origin_txid": "stub-txid-FPW0FZ3W44Q5J",
+    "attempts": 0
+  },
+  "20S4NNZ12ZN4F7GBYG0QCH5VWR": {
+    "session_id": "20S4NNZ12ZN4F7GBYG0QCH5VWR",
+    "addr": "(unknown)",
+    "otp_hash": "e69e637a8ffdef3b825545472efb028c2cb9ce1037d5e1245b6e2c06bfa125ae",
+    "mac": "913628b1fef21125a7b4c4ad2b0a93b68eedf217a06c77ade1d11af6b594d4b2",
+    "expiry": "2025-10-27T09:07:55.409378+00:00",
+    "status": "pending",
+    "origin_txid": "stub-txid-T86NTMVP6GNE6",
+    "attempts": 0
+  },
+  "GBXJAAK395RFRWFZYVQTYDYJP4": {
+    "session_id": "GBXJAAK395RFRWFZYVQTYDYJP4",
+    "addr": "(unknown)",
+    "otp_hash": "68439a4b76e3a259b18cffdbf93b2d184abc877d95e0060219d2efca54eba303",
+    "mac": "f3fe8557dbc9ef19d44276a30100aa638415708ace49c9308a1c7efd25409872",
+    "expiry": "2025-10-27T09:07:56.127959+00:00",
+    "status": "pending",
+    "origin_txid": "stub-txid-CM774RPARD0RE",
+    "attempts": 0
+  },
+  "S4W2HVF9TD5FST20EF764V3E7M": {
+    "session_id": "S4W2HVF9TD5FST20EF764V3E7M",
+    "addr": "(unknown)",
+    "otp_hash": "89af0420f52cd42e02d4213703cad23d9330df97ef268f29a600507543fa0be6",
+    "mac": "d0fbd99203f9bf11ce06fbe2446b243c3bea07810c14f060d4bfccaeb3b47066",
+    "expiry": "2025-10-27T09:07:56.691301+00:00",
+    "status": "pending",
+    "origin_txid": "stub-txid-41J20MW9GXM1Y",
+    "attempts": 0
+  },
+  "WJP89X4D68Q3014BQXVNM0YNCG": {
+    "session_id": "WJP89X4D68Q3014BQXVNM0YNCG",
+    "addr": "(unknown)",
+    "otp_hash": "90ad3c8b7acddcef80fbdb0c315f4fa658b64cd0a0aa3ecc1237c20b1af8270b",
+    "mac": "4242920fc21597ed98aacf9df9635dbfc0f1fb607032a3f0aab20f4411d68402",
+    "expiry": "2025-10-27T09:07:57.542669+00:00",
+    "status": "pending",
+    "origin_txid": "stub-txid-ZK4W5YXRJXE0R",
+    "attempts": 0
+  },
+  "R8K5XMEYEKYTM7RNHRAVB7FQ5M": {
+    "session_id": "R8K5XMEYEKYTM7RNHRAVB7FQ5M",
+    "addr": "(unknown)",
+    "otp_hash": "fe21ed9959144afe8bf678f678a17c872286ddec8c94bcd5bc0657a134c1cbbc",
+    "mac": "88067505b270ad45384ec33652ff7cb8f004ca43c40b144585fa22b190ca7521",
+    "expiry": "2025-10-27T09:07:58.280601+00:00",
+    "status": "pending",
+    "origin_txid": "stub-txid-35CZMQR5VZW0R",
+    "attempts": 0
+  },
+  "V73PJCHAE35N64643WTZ7656A8": {
+    "session_id": "V73PJCHAE35N64643WTZ7656A8",
+    "addr": "(unknown)",
+    "otp_hash": "f5bb78339bdd1c0ff6ac88a98e9ee5fe704db1665f6fe075b0928c60b5cc630d",
+    "mac": "2cbda2229c75e7410715fcfde1f3c26880cde12e2c117036d1901b603365fee7",
+    "expiry": "2025-10-27T09:07:58.895116+00:00",
+    "status": "pending",
+    "origin_txid": "stub-txid-AJNESRYEC31MG",
+    "attempts": 0
+  },
+  "9MTEPNXY6H9MRVC1Y2R9DC7T9C": {
+    "session_id": "9MTEPNXY6H9MRVC1Y2R9DC7T9C",
+    "addr": "(unknown)",
+    "otp_hash": "1da8f43112bd58662550a578c15eb82c846b0aa5be208c886a97a10c2f3482ad",
+    "mac": "b568bef43e96f33896f0218dd32e234a3d19159f46637afb24c98e9916e917c5",
+    "expiry": "2025-10-27T09:07:59.397663+00:00",
+    "status": "pending",
+    "origin_txid": "stub-txid-41H6G127GF9XA",
+    "attempts": 0
+  },
+  "TJPSJ5A4331D628V57EV1H2C60": {
+    "session_id": "TJPSJ5A4331D628V57EV1H2C60",
+    "addr": "(unknown)",
+    "otp_hash": "7f1f9dd5754fd92e70280be935cae05aa205260517e84152debc44d02c54a653",
+    "mac": "65624077274b08e41dccfec68bda263bb325664b163fbb056491cc44e841ad98",
+    "expiry": "2025-10-27T09:07:59.916410+00:00",
+    "status": "pending",
+    "origin_txid": "stub-txid-QBP2VW7Y8S5N2",
+    "attempts": 0
+  },
+  "HMN8ZHK5ED29HSV4X7F15E76YM": {
+    "session_id": "HMN8ZHK5ED29HSV4X7F15E76YM",
+    "addr": "(unknown)",
+    "otp_hash": "12d09cc5128569704531bf0745973d25d6d109c83e16f888fe3448e2444b44df",
+    "mac": "b57a231dc879d05fc0aa8e1c0fa88fcafaf98362a5a2477eb0f163494d6012ce",
+    "expiry": "2025-10-27T09:08:01.498199+00:00",
+    "status": "pending",
+    "origin_txid": "stub-txid-34T7BF40RNRAY",
+    "attempts": 0
+  },
+  "NE8JHHBN41YWB2P3CF0BA6Y10R": {
+    "session_id": "NE8JHHBN41YWB2P3CF0BA6Y10R",
+    "addr": "(unknown)",
+    "otp_hash": "477a149b6a8684cd495460a0ab42c7a05840e5df10801cb46e4c52076a4a50c9",
+    "mac": "ac21940f76c1fc22e571266579d62d78e0a85d5068d839b5dfbb46b095fbbf6a",
+    "expiry": "2025-10-27T09:08:02.159764+00:00",
+    "status": "pending",
+    "origin_txid": "stub-txid-Z6RGYAKFRHW3Y",
+    "attempts": 0
+  },
+  "6NTBVGTSDYW8WPR4728FA4XC78": {
+    "session_id": "6NTBVGTSDYW8WPR4728FA4XC78",
+    "addr": "(unknown)",
+    "otp_hash": "b6519eedcad90ea9b966fbac448225d62d0565569dd5ebfa05f7e880000b9cf5",
+    "mac": "11cf8412ff653e2c6b97e161a8aa9c794f9e8ac16ce34b6577da7ebe8240a3ba",
+    "expiry": "2025-10-27T09:08:02.592214+00:00",
+    "status": "pending",
+    "origin_txid": "stub-txid-RHGJ0SP140B0Y",
+    "attempts": 0
+  },
+  "ENXWWGTH9EZW2ZQY5FK5RQ7BEM": {
+    "session_id": "ENXWWGTH9EZW2ZQY5FK5RQ7BEM",
+    "addr": "(unknown)",
+    "otp_hash": "a3a184625d525dd9e226dbee4ebcba1f84d912ccffa76e96b92ef2abda01fa33",
+    "mac": "e1a99f7ebcee5c00531ad4d216f53347f4e7a1aa6060493ba0b485499051795a",
+    "expiry": "2025-10-27T09:08:03.027876+00:00",
+    "status": "pending",
+    "origin_txid": "stub-txid-SWKHMMAD11PRJ",
+    "attempts": 0
+  },
+  "8PBYFSREG76RNC9DWCHY47EN0M": {
+    "session_id": "8PBYFSREG76RNC9DWCHY47EN0M",
+    "addr": "(unknown)",
+    "otp_hash": "09c1616fd2b0b1345bed2fa34f78e250b87e8b6b0928727ad540ac453f8509c0",
+    "mac": "c2d88c237b3d109ab7e5aae42913324b25529bd5e8b25f40558646a4cbbeb9cb",
+    "expiry": "2025-10-27T09:34:08.635582+00:00",
+    "status": "pending",
+    "origin_txid": "stub-txid-XWFF34BJ7M082",
+    "attempts": 0
+  },
+  "T2MM3SYZ71HSKV8YEMADY0BGB4": {
+    "session_id": "T2MM3SYZ71HSKV8YEMADY0BGB4",
+    "addr": "(unknown)",
+    "otp_hash": "92e147d70233ff2abb6b4a6ff148adc6af17de5d5ad631067270fec663886971",
+    "mac": "d97843858f1b68e959aa2e953514a5a93fea3d2f702bba66fb8b1ef30f877fcc",
+    "expiry": "2025-10-27T09:34:55.119265+00:00",
+    "status": "pending",
+    "origin_txid": "stub-txid-GG0ENTMZDK0CT",
+    "attempts": 0
+  },
+  "PK4H4CHRNDCTS7WFHTH4S734ER": {
+    "session_id": "PK4H4CHRNDCTS7WFHTH4S734ER",
+    "addr": "(unknown)",
+    "otp_hash": "76e2524ed381e9e623c97a2e922d2f37db1f6395432389b9d6770dc8ae338451",
+    "mac": "2b2ca9c2011dda34571959ece8da037723ff315ca7f86e66e0e2709a669dc165",
+    "expiry": "2025-10-27T09:34:56.770943+00:00",
+    "status": "pending",
+    "origin_txid": "stub-txid-EFV3C8PNJ7SRA",
+    "attempts": 0
+  },
+  "KM70HFG6TRYG1NDP5116ATTWCW": {
+    "session_id": "KM70HFG6TRYG1NDP5116ATTWCW",
+    "addr": "(unknown)",
+    "otp_hash": "e3c45c222919e9a2600c2513ed4d2df0b64bb97873aa752cdd5cd2c551e52756",
+    "mac": "a6b6b1c054f355201291eb3cc7f15c65c9dc320103c6d7028a81da5ca0ab9ce5",
+    "expiry": "2025-10-27T09:34:57.657410+00:00",
+    "status": "pending",
+    "origin_txid": "stub-txid-834HQ63WWKC6G",
+    "attempts": 0
+  },
+  "BHDX3R1MYERT4WWYJXN1FN5APW": {
+    "session_id": "BHDX3R1MYERT4WWYJXN1FN5APW",
+    "addr": "(unknown)",
+    "otp_hash": "36f62054d4d44dd6563e79157a6fdce567a6bee2136b69ca5ffe97b3cfbb9f6f",
+    "mac": "04f9ba89cd2d883d4f0684199e99ee198aac199c02697b242bf805268fdf1f70",
+    "expiry": "2025-10-27T09:34:58.836514+00:00",
+    "status": "pending",
+    "origin_txid": "stub-txid-1VG7ZWFQ9E6DP",
+    "attempts": 0
+  },
+  "M8GJ9R6H9SNNNS9A26NT2XT600": {
+    "session_id": "M8GJ9R6H9SNNNS9A26NT2XT600",
+    "addr": "(unknown)",
+    "otp_hash": "c556bc32674ad29f25d0832777f00c1b7c8a5fb5e4df0f046bc43713c8edd162",
+    "mac": "526f8b216077d974c21c1e681494e1ae359fdf53986d4b0bc3c376630ee45b7e",
+    "expiry": "2025-10-27T09:35:10.215946+00:00",
+    "status": "pending",
+    "origin_txid": "stub-txid-QAP8PP5AKP1C2",
+    "attempts": 0
+  },
+  "V72H9C34DNBX2NT23QGCVG4N18": {
+    "session_id": "V72H9C34DNBX2NT23QGCVG4N18",
+    "addr": "(unknown)",
+    "otp_hash": "4d9179a044acc15d54ac55ed3a1d1cda471fbba1c838e65f61fdea0953f704bc",
+    "mac": "0ab9e44939fccd787685adc337d38bb349423f8afa9116716d883e4e98522693",
+    "expiry": "2025-10-27T09:35:10.676185+00:00",
+    "status": "pending",
+    "origin_txid": "stub-txid-VTRM1PB5VAZQ0",
+    "attempts": 0
+  },
+  "XQQEJ1VMZWXB9MRVACRJGM9EXG": {
+    "session_id": "XQQEJ1VMZWXB9MRVACRJGM9EXG",
+    "addr": "(unknown)",
+    "otp_hash": "e67664b2fcc50a64f54362dde781eee1e7bff46ba450ce15c16367957aea2ab4",
+    "mac": "4872f2874057b60b1d6de3bfa9737ad36035a528153799f7e35603b1ceab6ab6",
+    "expiry": "2025-10-27T09:35:11.097607+00:00",
+    "status": "pending",
+    "origin_txid": "stub-txid-88GR6TW6H6YGE",
+    "attempts": 0
+  },
+  "GPENWAZA002A5EZ11H8ESQFRR8": {
+    "session_id": "GPENWAZA002A5EZ11H8ESQFRR8",
+    "addr": "(unknown)",
+    "otp_hash": "4406a3dd37ddf965c13c7fb3d63fe161fafe793235dbe3c415a045644aa11641",
+    "mac": "84ee38ba45c17214810f45c619b776dbab2aefe748828f1a7fcb640e8866bb45",
+    "expiry": "2025-10-27T09:35:11.597750+00:00",
+    "status": "pending",
+    "origin_txid": "stub-txid-HCQ2S332P95HG",
+    "attempts": 0
+  },
+  "AHB0MDD1AADXA4Q18QPAH27DWC": {
+    "session_id": "AHB0MDD1AADXA4Q18QPAH27DWC",
+    "addr": "(unknown)",
+    "otp_hash": "bbbfc9c0a7ba18db14acb4948e7e43a9f1be27346a861c3f23f21eb74e334c54",
+    "mac": "e82fb0c84ffdd32f795500cd7de229800ed1fa6210ca7f5596c297d074de8888",
+    "expiry": "2025-10-27T09:53:04.587710+00:00",
+    "status": "pending",
+    "origin_txid": "stub-txid-529PZMJH2S5BM",
+    "attempts": 0
+  },
+  "WCK2G7T6CWK8SEBGCQ6YDAETF4": {
+    "session_id": "WCK2G7T6CWK8SEBGCQ6YDAETF4",
+    "addr": "(unknown)",
+    "otp_hash": "69d34f41b451939e050e80e4af8eeb0a12931d5387d7e0bc37fa2b30cccd3828",
+    "mac": "50946c0bd0cc3375ebaa60f05308f08836aad74efd9b0c5ef7bb40906c369f09",
+    "expiry": "2025-10-27T09:54:29.310962+00:00",
+    "status": "pending",
+    "origin_txid": "stub-txid-7MD9MJ22F5PH4",
+    "attempts": 0
+  }
+}

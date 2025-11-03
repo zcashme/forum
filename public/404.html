@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Redirecting…</title>
+    <meta name="robots" content="noindex" />
+    <script>
+      // GitHub Pages SPA fallback: redirect 404s to index.html preserving path
+      (function() {
+        var l = window.location;
+        var segments = l.pathname.split('/');
+        // Detect repo slug for project pages (username.github.io/repo)
+        var repo = (segments.length > 1 && segments[1]) ? segments[1] : '';
+        var keep = repo ? ('/' + repo + '/') : '/';
+        var rest = segments.slice(repo ? 2 : 1).join('/');
+        var newURL = l.protocol + '//' + l.host + keep + 'index.html?/' + rest + l.search + l.hash;
+        window.location.replace(newURL);
+      })();
+    </script>
+  </head>
+  <body>
+    Redirecting to the application…
+  </body>
+</html>
