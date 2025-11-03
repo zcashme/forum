@@ -313,13 +313,13 @@ export default function Directory() {
 </button>
 
 {/* Feedback */}
-<a
-  href="/Zechariah"
+<Link
+  to="/Zechariah"
   className="px-2 py-0.5 rounded-full border text-xs font-medium transition-all
              bg-transparent text-gray-700 border-gray-400 hover:bg-gray-50"
 >
   ⚑ Feedback
-</a>
+</Link>
               </div>
             </div>
           </div>

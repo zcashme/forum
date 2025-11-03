@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import useAuth from "./hooks/useAuth";
 
 export default function Authenticate() {
@@ -121,7 +122,7 @@ export default function Authenticate() {
       </div>
 
       <div className="mt-8 text-sm text-gray-600">
-        Need to view Bob's received Memo? Go to the <a href="/messages" className="text-blue-600 underline">Latest Messages</a> page.
+        Need to view Bob's received Memo? Go to the <Link to="/messages" className="text-blue-600 underline">Latest Messages</Link> page.
       </div>
     </div>
   );
