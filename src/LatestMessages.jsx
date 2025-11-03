@@ -75,6 +75,24 @@ export default function LatestMessages() {
   }
 
   useEffect(() => {
+    // Realtime updates from Supabase (requires VITE_SUPABASE_URL + VITE_SUPABASE_ANON_KEY)
+    if (typeof supabase.channel === "function") {
+      const schema = import.meta.env.VITE_SUPABASE_SCHEMA || "zda";
+      const table = import.meta.env.VITE_MEMO_TABLE || "zecbook";
+      const ch = supabase
+        .channel("zecbook-changes")
+        .on("postgres_changes", { event: "*", schema, table }, () => {
+          // Re-fetch with current filters so UI stays consistent
+          fetchMemos();
+        })
+        .subscribe();
+      return () => {
+        supabase.removeChannel(ch);
+      };
+    }
+  }, []);
+
+  useEffect(() => {
     // First load
     fetchMemos();
     // Poll every 15s

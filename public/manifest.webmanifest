@@ -2,7 +2,7 @@
   "name": "Zcash.me",
   "short_name": "ZcashMe",
   "description": "Decentralized Zcash messaging & sign-in via memo",
-  "start_url": "/",
+  "start_url": ".",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#ffffff",

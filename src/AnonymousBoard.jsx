@@ -59,6 +59,23 @@ export default function AnonymousBoard() {
   }
 
   useEffect(() => {
+    // Realtime updates from Supabase (requires VITE_SUPABASE_URL + VITE_SUPABASE_ANON_KEY)
+    if (typeof supabase.channel === "function") {
+      const schema = import.meta.env.VITE_SUPABASE_SCHEMA || "zda";
+      const table = import.meta.env.VITE_MEMO_TABLE || "zecbook";
+      const ch = supabase
+        .channel("anonboard-changes")
+        .on("postgres_changes", { event: "*", schema, table }, () => {
+          loadMessages();
+        })
+        .subscribe();
+      return () => {
+        supabase.removeChannel(ch);
+      };
+    }
+  }, []);
+
+  useEffect(() => {
     loadMessages();
     timerRef.current = setInterval(loadMessages, 15000);
     return () => { if (timerRef.current) clearInterval(timerRef.current); };
