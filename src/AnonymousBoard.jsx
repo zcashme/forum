@@ -40,7 +40,10 @@ export default function AnonymousBoard() {
 
       const { data, error } = await client
         .from(fromArg)
-        .select("ts, memo_text, to_address, txid")
+        .select("ts, memo_text, to_address, txid, height")
+        .eq("to_address", SCAN_ADDR)
+        .not("height", "is", null)
+        .order("height", { ascending: false })
         .order("ts", { ascending: false })
         .limit(500);
       if (error) throw error;
@@ -92,6 +95,17 @@ export default function AnonymousBoard() {
         This page shows all records from the database in plain text.
       </p>
 
+      <div className="mb-3 flex items-center gap-2">
+        <button
+          onClick={loadMessages}
+          className="bg-blue-600 text-white rounded px-3 py-1"
+          disabled={loading}
+        >
+          {loading ? "Checking…" : "Check for new messages"}
+        </button>
+        <span className="text-xs text-gray-600">Auto-refresh every 15s</span>
+      </div>
+
       {error && (
         <div className="bg-red-50 border border-red-200 text-red-700 p-2 rounded mb-3">
           {error}
@@ -106,7 +120,7 @@ export default function AnonymousBoard() {
         {items.map((m, idx) => (
           <li key={`${m.txid}-${idx}`} className="border rounded p-2 bg-white">
             <div className="flex items-center justify-between text-xs text-gray-600 mb-1">
-              <span>{formatTs(m.ts)}</span>
+              <span>Height {m.height ?? "?"}</span>
               <span className="font-mono">{(m.to_address || "").slice(0, 16)}…</span>
             </div>
             <pre className="text-sm text-gray-800 whitespace-pre-wrap break-words">{m.plain}</pre>

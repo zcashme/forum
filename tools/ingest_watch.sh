@@ -21,8 +21,8 @@ echo "[ingest_watch] base=${BASE} addr=${ADDR} mode=${MODE} interval=${INTERVAL}
 
 while true; do
   TS=$(date -Iseconds)
-  # Persist recent transactions into Supabase via adapter.
-  curl -s "${BASE}/list-all?persist=1&min=0&since=600&persist_mode=${MODE}&addr=${ADDR}" >/dev/null || true
+  # Persist recent transactions into Supabase via adapter (prefer /scan).
+  curl -s "${BASE}/scan?addr=${ADDR}&persist_mode=${MODE}&since=600&min=0" >/dev/null || true
   echo "[${TS}] persisted latest transactions"
   sleep "${INTERVAL}"
 done

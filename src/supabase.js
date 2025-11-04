@@ -16,6 +16,8 @@ function makeThenable(result) {
     insert() { return makeThenable({ data: null, error: null }); },
     single() { return makeThenable(result); },
     limit() { return makeThenable(result); },
+    not() { return makeThenable(result); },
+    eq() { return makeThenable(result); },
     then(onFulfilled) { return Promise.resolve(result).then(onFulfilled); },
   };
 }
@@ -30,6 +32,8 @@ export const supabase = (supabaseUrl && supabaseAnonKey)
           insert() { return makeThenable({ data: null, error: null }); },
           order() { return makeThenable(res); },
           limit() { return makeThenable(res); },
+          not() { return makeThenable(res); },
+          eq() { return makeThenable(res); },
           then(onFulfilled) { return Promise.resolve(res).then(onFulfilled); },
         };
       },

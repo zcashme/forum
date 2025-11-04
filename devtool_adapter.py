@@ -701,6 +701,8 @@ def list_all():
     persist = request.args.get("persist", "0").lower() in ("1", "true", "yes")
     # New: addr for filling to_address when missing
     addr = request.args.get("addr")
+    # New: restrict persistence (and response) to target addr only
+    addr_only = request.args.get("addr_only", "0").lower() in ("1", "true", "yes")
     
     # New: persistence mode override via query param
     persist_mode = request.args.get("persist_mode", PERSIST_MODE_DEFAULT).lower()
@@ -766,6 +768,13 @@ def list_all():
     except Exception:
         outputs = _parse_list_tx_stdout_full(stdout)
 
+    # Optional: restrict outputs to target addr only
+    try:
+        if addr_only and addr:
+            outputs = [m for m in outputs if m.get("to_address") == addr]
+    except Exception:
+        pass
+
     # Server-side filters
     if since_sec and outputs:
         try:
@@ -779,24 +788,14 @@ def list_all():
             outputs = [m for m in outputs if _keep(m)]
         except Exception:
             pass
-
-    if outputs:
+    if min_zec and outputs:
         try:
-            outputs = [m for m in outputs if float(m.get("amount", 0.0)) >= min_zec]
+            outputs = [m for m in outputs if float(m.get("amount") or 0.0) >= min_zec]
         except Exception:
             pass
-
     if height_min and outputs:
         try:
-            def _h_ok(m):
-                h = m.get("height")
-                if h is None:
-                    return True
-                try:
-                    return int(h) >= height_min
-                except Exception:
-                    return True
-            outputs = [m for m in outputs if _h_ok(m)]
+            outputs = [m for m in outputs if int(m.get("height") or 0) >= height_min]
         except Exception:
             pass
 
@@ -823,7 +822,7 @@ def list_all():
                     "source": "devtool",
                     "ingested_at": datetime.utcnow().isoformat(),
                     "height": m.get("height"),
-                } for m in outputs]
+                } for m in outputs if (not addr_only) or (m.get("to_address") == addr)]
             else:
                 rows = [{
                     "txid": m.get("txid"),
@@ -835,7 +834,7 @@ def list_all():
                     "source": "devtool",
                     "ingested_at": datetime.utcnow().isoformat(),
                     "height": m.get("height"),
-                } for m in outputs if m.get("memo_hex") and ((m.get("to_address") or addr))]
+                } for m in outputs if m.get("memo_hex") and ((not addr_only) or (m.get("to_address") == addr))]
             conflict_keys = "txid,to_address,memo_hex" if persist_mode == "all" else "txid,memo_hex"
             rows = _dedup_by_keys(rows, conflict_keys)
             supa_res = _upsert_memos_supabase(rows, conflict_keys=conflict_keys)

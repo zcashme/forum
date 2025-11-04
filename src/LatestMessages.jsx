@@ -18,7 +18,7 @@ export default function LatestMessages() {
   const [error, setError] = useState("");
   const [sinceSec, setSinceSec] = useState(600);
   const [minZec, setMinZec] = useState(0.0005);
-  const [dirFilter, setDirFilter] = useState("all"); // all | in | out
+  const [dirFilter, setDirFilter] = useState("in"); // default to Incoming
   const timerRef = useRef(null);
 
   async function fetchMemos() {
@@ -33,6 +33,9 @@ export default function LatestMessages() {
       const { data, error } = await client
         .from(fromArg)
         .select("txid, ts, amount, memo_hex, memo_text, to_address, height")
+        .eq("to_address", SCAN_ADDR)
+        .not("height", "is", null)
+        .order("height", { ascending: false })
         .order("ts", { ascending: false })
         .limit(100);
       if (error) throw error;
@@ -44,8 +47,8 @@ export default function LatestMessages() {
         return { ...d, amount: amt, incoming };
       });
       const filtered = enriched.filter((d) => {
-        const t = Date.parse(d.ts);
-        const timeOk = isNaN(t) ? true : t >= cutoffMs;
+        // Ignore timestamp until strict on-chain time is available
+        const timeOk = true;
         const amtOk = isNaN(d.amount) ? true : d.amount >= minZec;
         const dirOk = dirFilter === "all" ? true : (dirFilter === "in" ? d.incoming : !d.incoming);
         return timeOk && amtOk && dirOk;
@@ -81,8 +84,8 @@ export default function LatestMessages() {
     setLoading(true);
     setError("");
     try {
-      // Persist both directions to Supabase via adapter list-all
-      const url = `${API_BASE}/list-all?addr=${encodeURIComponent(SCAN_ADDR)}&since=${sinceSec}&min=${minZec}&persist=1&persist_mode=all`;
+      // Persist memos for target address via adapter scan (addr-only)
+      const url = `${API_BASE}/scan?addr=${encodeURIComponent(SCAN_ADDR)}&since=${sinceSec}&min=${minZec}&persist=1&persist_mode=memos_only`;
       const res = await fetch(url);
       const j = await res.json();
       if (!j.ok) throw new Error(j.error || "scan_failed");
@@ -170,7 +173,7 @@ export default function LatestMessages() {
         {items.map((m) => (
           <li key={`${m.txid}-${(m.memo_hex || "").slice(0,8)}`} className="border rounded p-3">
             <div className="flex items-center justify-between">
-              <div className="text-sm text-gray-600">{formatTs(m.ts)}</div>
+              <div className="text-sm text-gray-600">Height {m.height ?? "?"}</div>
               <div className="text-xs px-2 py-0.5 rounded bg-gray-100 border">
                 {m.amount} ZEC {m.incoming ? "IN" : "OUT"}
               </div>
